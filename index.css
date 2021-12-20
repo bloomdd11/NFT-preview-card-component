@@ -1,0 +1,142 @@
+:root {
+    --main_bg_color: hsl(217, 54%, 11%);
+    --card_bg_color: hsl(216, 50%, 16%);
+    --general_text: hsl(215, 22%, 55%);
+    --unhover_text: hsl(0, 0%, 100%);
+    --eth_color: ;
+  }
+
+  body {
+    margin: 0;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main_bg_color);
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .card {
+    border: 1px solid black;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--card_bg_color);
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.425), -10px 15px 20px rgba(0, 0, 0, 0.425);
+  }
+
+  .card_img {
+    align-self: center;
+    position: relative;
+  }
+
+  .card_img img {
+    margin: 5px 0;
+    margin-top: 0;
+    border-radius: 10px;
+  }
+
+  .card_img .card_img_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00FFF8;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    opacity: 0;
+  }
+
+  .card_img .card_img_overlay img {
+    position: relative;
+    top: 45%;
+    left: 40%;
+  }
+
+  .card_header h4 {
+    width: fit-content;
+    margin: 10px 0;
+    color: var(--unhover_text);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .card_header h4 .card_header_number {
+    letter-spacing: 1px;
+  }
+
+  .card_para p {
+    margin: 10px 0;
+    color: var(--general_text);
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  .card_wid {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .card_wid_eth {
+    color: #00FFF8;
+  }
+
+  .card_wid_eth img {
+    position: relative;
+    top: 4px;
+    margin-right: 4px;
+  }
+
+  .card_wid_time {
+    color: var(--general_text);
+    font-weight: 300;
+  }
+
+  .card_wid_time img {
+    position: relative;
+    top: 3px;
+    margin-right: 0px;
+  }
+
+  .card_line hr {
+    border: 1px solid rgb(70, 69, 69);
+  }
+
+  .card_creator p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: var(--general_text);
+  }
+
+  .card_creator p img {
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+  .card_creator p .card_creator_name {
+    margin-left: 5px;
+    color: var(--unhover_text);
+  }
+
+  /* hover part */
+  .card_header h4:hover {
+    color: #00FFF8;
+    cursor: pointer;
+  }
+
+  .card_creator .card_creator_name:hover {
+    color: #00FFF8;
+    cursor: pointer;
+  }
+
+  .card_img .card_img_overlay:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
